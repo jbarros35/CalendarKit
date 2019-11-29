@@ -5,7 +5,7 @@ public class AllDayView: UIView {
   
   internal weak var eventViewDelegate: EventViewDelegate?
   
-  var style = AllDayStyle()
+  open var style = AllDayStyle()
   
   let allDayLabelWidth: CGFloat = 53.0
   let allDayEventHeight: CGFloat = 24.0

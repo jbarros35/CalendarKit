@@ -50,8 +50,8 @@ public class DayView: UIView, EventViewDelegate, TimelinePagerViewDelegate {
     }
   }
 
-  let dayHeaderView: DayHeaderView
-  let timelinePagerView: TimelinePagerView
+  public let dayHeaderView: DayHeaderView
+  public let timelinePagerView: TimelinePagerView
 
   public var state: DayViewState? {
     didSet {
@@ -62,7 +62,7 @@ public class DayView: UIView, EventViewDelegate, TimelinePagerViewDelegate {
 
   public var calendar: Calendar = Calendar.autoupdatingCurrent
 
-  var style = CalendarStyle()
+  open var style = CalendarStyle()
 
   public init(calendar: Calendar = Calendar.autoupdatingCurrent) {
     self.calendar = calendar
